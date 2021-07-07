@@ -29,15 +29,14 @@ del jugador 1 (la persona) es el argumento de entrada tablero mediante "tablero_
 
 -Turno de los barcos del jugador 2 (la maquina) asignados mediante tablero_usuario2
 
-  poner_barco(4,1,tablero_usuario2) -> Eslora 4, 1 barco para la maquina
+  	poner_barco(4,1,tablero_usuario2) -> Eslora 4, 1 barco para la maquina
 	poner_barco(3,2,tablero_usuario2) -> Eslora 3, 2 barcos para la maquina
 	poner_barco(2,3,tablero_usuario2) -> Eslora 2, 3 barcos para la maquina
-
-poner_barco(1,4,tablero_usuario2) -> Eslora 1, 4 barcos para la maquina
+	poner_barco(1,4,tablero_usuario2) -> Eslora 1, 4 barcos para la maquina
 
 -contadores de disparos acertados de cada jugador. El contador_1 para el usuario y el contador_2 para la maquina
-  contador_1 = 0
-  contador_2 = 0
+  	contador_1 = 0
+  	contador_2 = 0
 
 -Un booleano para establecer el usuario y la maquina. True es el usuario1 y False es el ordenador
 tipo_jugador = True
