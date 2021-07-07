@@ -76,21 +76,21 @@ while contador_1 < 20 and contador_2 < 20:
             x = int(input("Elige un numero de fila entre 0 y 9: "))
             y = int(input("Elige un numero de columna entre 0 y 9: "))
 
-        if tablero_usuario2[x, y] == "O":
-            tablero_usuario1_disparos[x, y] = "X"
-            tablero_usuario2[x, y] = "X"
-            contador_1 += 1
-            print("Tocado!!\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
+            if tablero_usuario2[x, y] == "O":
+                tablero_usuario1_disparos[x, y] = "X"
+                tablero_usuario2[x, y] = "X"
+                contador_1 += 1
+                print("Tocado!!\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
 
-        elif tablero_usuario2[x, y] == " ":
-            tablero_usuario1_disparos[x, y] = "-"
-            tablero_usuario2[x, y] = "-"
-            tipo_jugador = False
-            print("Al agua!!\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
+            elif tablero_usuario2[x, y] == " ":
+                tablero_usuario1_disparos[x, y] = "-"
+                tablero_usuario2[x, y] = "-"
+                tipo_jugador = False
+                print("Al agua!!\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
 
-        else:
-            tipo_jugador = False
-            print("Ya has eligido esta coordenada...\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
+            else:
+                tipo_jugador = False
+                print("Ya has eligido esta coordenada...\nTablero de disparos usuario 1\n", tablero_usuario1_disparos, "\n")
 
         except (NameError, ValueError, IndexError):
             print("----Tienes que eligir un numero entero entre 0 y 9. Has perdido tu turno.----")
